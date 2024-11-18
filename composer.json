@@ -1,0 +1,17 @@
+{
+    "name": "uks/unipe-interpreter",
+    "description": "Interpreter em php",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Uks\\Unipe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "breno",
+            "email": "brenoow@proton.me"
+        }
+    ],
+    "require": {}
+}
