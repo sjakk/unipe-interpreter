@@ -23,13 +23,23 @@ echo <<<HELP
 
 
 if($argc <=  1){
-	help();
+	//help();
 }
 
 
 
 
 
+
+class MyInterpreter {
+    public function run(string $code): string {
+                if (trim($code) === 'print("Hello, World!")') {
+            return "Hello, World!";
+        }
+
+        return "Unknown command: " . htmlspecialchars($code);
+    }
+}
 
 
 

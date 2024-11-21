@@ -84,53 +84,21 @@ button:hover{
 </head>
 
 <body>
-
-
 	<div class="topbar">
 		<button id="executeButton">Execute</button>
 		<div class="spinner" id="spinner"></div>
 	</div>
 
-
 	<div class="container">
 		<div class="column">
-			<textarea class="code-editor" id="codeInput" palceholder="Insira seu codigo aqui..."></textarea>
-			</div
-			<div class="column" id="outputContainer"></div>
+			<textarea class="code-editor" id="codeInput" placeholder="Insira seu codigo aqui..."></textarea>
+		</div>
+		<div class="column">
+			<div class="output" id="outputContainer"></div>
+		</div>
 	</div>
 
-
-
-<script>
-const executeButton = document.getElementById("executeButton");
-const codeInput = document.getElementById("codeInput");
-const outputContainer = document.getElementById("outputContainer");
-const spinner = document.getElementById("spinner");
-
-
-executeButton.addEventListener("click",() =>{
-	const code = codeInput.value;
-
-	spinner.style.display = "inline-block";
-	executeBytton.style.display = "none";
-
-	const formData = new FormData();
-	formData.append("source_code",code);
-
-	fetch("", {
-		method: "POST",
-		body: formData,
-	});
-
-	
-
-});
-
-
-</script>
-
-
-
+	<script src="script.js"></script>
 </body>
 
 
