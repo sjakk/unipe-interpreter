@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData();
         formData.append("source_code", code);
 
-        fetch("http://localhost:8000/interpreter.php", {
+        fetch("http://localhost:3000/interpreter.php", {
             method: "POST",
             body: formData,
         })

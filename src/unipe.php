@@ -4,6 +4,10 @@ declare(strict_types=1);
 namespace Unipe;
 
 
+require './vendor/autoload.php';
+
+use Unipe\Repl\Repl;
+
 
 function help(): never{
 
@@ -28,9 +32,6 @@ if($argc <=  1){
 
 
 
-
-
-
 class MyInterpreter {
     public function run(string $code): string {
                 if (trim($code) === 'print("Hello, World!")') {
@@ -41,6 +42,6 @@ class MyInterpreter {
     }
 }
 
-
+?>
 
 
